@@ -59,9 +59,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
-  /* --color-primary: #FF014F; */
+  --color-primary: #FF014F;
   /* --color-primary: #86a39f; */
-  --color-primary: #4d3e62;
+  /* --color-primary: #4d3e62; */
   --color-primary-alt: #ff014dd9;
   --color-primary-2nd: #FF494A;
   --color-primary-3rd: #FDC448;
@@ -572,9 +572,57 @@ audio:not([controls]) {
   display: none;
 }
 
+.table {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.table thead th {
+  background-color: #4d3e62;
+  color: white;
+  border: none;
+  padding: 15px;
+}
+
+.table td {
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.registration-notes {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.registration-notes li {
+  font-size: 25px;
+  color: #666;
+}
+
+.registration-buttons {
+  gap: 15px;
+}
+
 a {
   color: var(--color-heading);
   text-decoration: none;
+  outline: none;
+}
+.a-clone{
+  color: var(--color-heading);
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.a-clone:hover,
+.a-clone:focus,
+.a-clone:active{
+  text-decoration: none;
+  outline: none;
+}
+.a-clone:focus{
   outline: none;
 }
 
@@ -12038,7 +12086,7 @@ header.header-full-width.header--sticky.sticky {
 
 .tmp-banner-one-area {
   padding-top: 26px;
-  background-image: url("../images/banner/banner-background-one.jpg");
+  background-image: url("/static/banner-background-one.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
