@@ -256,6 +256,10 @@ h6,
   line-height: 1.25;
 }
 
+tbody, tr, td{
+  font-size: 20px;
+}
+
 h1 a,
 h2 a,
 h3 a,

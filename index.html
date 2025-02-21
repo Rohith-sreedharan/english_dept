@@ -5,46 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Reeni is a modern personal portfolio template for designers, developers, and freelancers. Fully responsive, SEO-friendly, and easy to customize." />
-    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.png" />
+        content="International Conference On English Language, Literature & Linguistics - ICELLL 2.0 organized by Sona College of Technology. Website designed and developed by Rohith SV from Department of IT." />
+    <meta name="author" content="Rohith SV - Department of IT, Sona College of Technology" />
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="ICELLL 2.0, International Conference, English Language, Literature, Linguistics, Sona College of Technology, Salem, Academic Conference, Research Conference" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="International Conference On English Language, Literature & Linguistics - ICELLL 2.0" />
+    <meta property="og:description" content="International Conference On English Language, Literature & Linguistics - ICELLL 2.0 organized by Sona College of Technology. Website designed and developed by Rohith SV from Department of IT." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sonatech.ac.in/" />
+    <meta property="og:image" content="static_2/favicon.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="International Conference On English Language, Literature & Linguistics - ICELLL 2.0" />
+    <meta name="twitter:description" content="International Conference On English Language, Literature & Linguistics - ICELLL 2.0 organized by Sona College of Technology" />
+    <meta name="twitter:image" content="static_2/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="static_2/favicon.png" />
     <title>
         International Conference On English Language, Literature & Linguistics - ICELLL 2.0
     </title>
     <!-- Bootstrap min css -->
-    <link rel="stylesheet" href="static/fontawesome.css" />
-    <link rel="stylesheet" href="static/swiper.css" />
-    <link rel="stylesheet" href="static/odometer.css" />
-    <link rel="stylesheet" href="static/animate.min.css" />
-    <link rel="stylesheet" href="static/bootstrap.min.css" />
+    <link rel="stylesheet" href="static_2/fontawesome.css" />
+    <link rel="stylesheet" href="static_2/swiper.css" />
+    <link rel="stylesheet" href="static_2/odometer.css" />
+    <link rel="stylesheet" href="static_2/animate.min.css" />
+    <link rel="stylesheet" href="static_2/bootstrap.min.css" />
     <!-- custom css -->
-    <link rel="stylesheet" href="static/style.css" />
+    <link rel="stylesheet" href="static_2/style.css" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="theme-color" content="#4d3e62" />
+    <!-- <meta name="theme-color" content="#4d3e62" />
     <meta name="msapplication-navbutton-color" content="#4d3e62" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="msapplication-navbutton-color" content="#4d3e62" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="msapplication-navbutton-color" content="#4d3e62" />
-    
+    <meta name="msapplication-navbutton-color" content="#4d3e62" /> -->
+
+    <meta name="theme-color" content="#FF014F" />
+    <meta name="msapplication-navbutton-color" content="#FF014F" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="msapplication-navbutton-color" content="#FF014F" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="msapplication-navbutton-color" content="#FF014F" />
+    <style>
+        .countdown-wrapper {
+            width: 100%;
+        }
+
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .countdown-item {
+            text-align: center;
+            min-width: 80px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .countdown-item span {
+            font-size: 65px;
+            font-weight: bold;
+            color: var(--color-primary);
+        }
+
+        .countdown-item p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: var(--color-body);
+        }
+    </style>
     <style>
         .timeline-items {
             display: flex;
             justify-content: space-between;
             position: relative;
             z-index: 1;
-            padding: 0 30px;  /* More padding for balanced layout */
+            padding: 0 30px;
+            /* More padding for balanced layout */
         }
+
         .timeline-item {
             flex: 1;
             text-align: center;
-            padding: 0 30px;  /* Increased padding */
+            padding: 0 30px;
+            /* Increased padding */
             min-width: 140px;
         }
+
         .station {
             margin-bottom: 20px;
         }
+
         .train-stop {
             width: 24px;
             height: 24px;
@@ -54,76 +110,95 @@
             margin: 0 auto;
             position: relative;
         }
+
         .train-stop.completed {
             background: #28a745;
             border-color: #28a745;
         }
+
         .timeline-item.completed .train-stop {
             background: #28a745;
             border-color: #28a745;
         }
+
         .timeline-item.active .train-stop {
             background: #007bff;
             border-color: #007bff;
             animation: pulse 1.5s infinite;
         }
+
         .tick-mark {
             color: white;
             font-size: 14px;
             align-items: center;
             justify-content: center;
         }
+
         .timeline-content {
             margin-top: 25px;
         }
+
         .timeline-content h6 {
             margin: 0;
             font-weight: bold;
             color: #333;
         }
+
         .timeline-content p {
             margin: 5px 0 0;
             font-size: 16px;
             color: #666;
         }
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4); }
-            70% { box-shadow: 0 0 0 12px rgba(0, 123, 255, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(0, 123, 255, 0); }
-        }
-        .equal-height {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    height: 100%;
-                    min-height: 500px;
-                    padding: 20px;
-                    border-radius: 15px;
-                    margin: 15px;
-                    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-                    position: relative;
-                    overflow: hidden;
-                }
-                .speaker-image img {
-                    border-radius: 10px;
-                    height: 200px;
-                    object-fit: cover;
-                    width: 100%;
-                }
-                .square-logo {
-    aspect-ratio: 1;
-    padding: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem;
-}
 
-.square-logo img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 12px rgba(0, 123, 255, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+            }
+        }
+
+        .equal-height {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            min-height: 500px;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .speaker-image img {
+            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .square-logo {
+            aspect-ratio: 1;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem;
+        }
+
+        .square-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
     </style>
 </head>
 
@@ -134,9 +209,9 @@
                 <div class="col-lg-12">
                     <div class="header-content">
                         <div class="logo">
-                            <a href="index-white.html">
-                                <img class="logo-dark" src="static/logo.png" alt="Sona College Of Tech" />
-                                <img class="logo-white" src="static/logo.png" alt="Sona College Of Tech" />
+                            <a href="/">
+                                <img class="logo-dark" src="static_2/Logo-76h.png" alt="Sona College Of Tech" />
+                                <img class="logo-white" src="static_2/Logo-76h.png" alt="Sona College Of Tech" />
                             </a>
                         </div>
                         <nav class="tmp-mainmenu-nav d-none d-xl-block">
@@ -193,9 +268,9 @@
         <div class="tmp-sidebar-area tmp_side_bar">
             <div class="inner">
                 <div class="top-area">
-                    <a href="index.html" class="logo">
-                        <img class="logo-dark" src="static/logo.png" alt="Sona College Of Tech" />
-                        <img class="logo-white" src="static/logo.png" alt="Sona College Of Tech" />
+                    <a href="/" class="logo">
+                        <img class="logo-dark" src="static_2/logo.png" alt="Sona College Of Tech" />
+                        <img class="logo-white" src="static_2/logo.png" alt="Sona College Of Tech" />
                     </a>
                     <div class="close-icon-area">
                         <button class="tmp-round-action-btn close_side_menu_active">
@@ -205,15 +280,15 @@
                 </div>
                 <div class="content-wrapper">
                     <div class="image-area-feature">
-                        <a href="index-white.html">
-                            <img src="static/clg.26.01.jpeg" alt="personal-logo" />
+                        <a href="index.html">
+                            <img src="static_2/clg.26.01.jpeg" alt="personal-logo" />
                         </a>
                     </div>
                     <h5 class="title mt--30">
                         AN INTERNATIONAL CONFERENCE ON ENGLISH LANGUAGE, LITERATURE AND LINGUISTICS (ICELLL '25)
                     </h5>
                     <p class="disc">
-                        6TH & 7TH MARCH 2025
+                        Online Mode | May 7th & 8th, 2025.
                     </p>
                     <div class="short-contact-area">
                         <!-- single contact information -->
@@ -221,7 +296,7 @@
                             <i class="fa-solid fa-phone"></i>
                             <div class="information tmp-link-animation">
                                 <span>Call Now</span>
-                                <a href="#" class="number">+92 (8800) - 98670</a>
+                                <a href="#" class="number">+91 98436-82314</a>
                             </div>
                         </div>
                         <!-- single contact information end -->
@@ -231,29 +306,29 @@
                             <i class="fa-solid fa-envelope"></i>
                             <div class="information tmp-link-animation">
                                 <span>Mail Us</span>
-                                <a href="#" class="number">example@info.com</a>
+                                <a href="#" class="number">renugam@sonatech.ac.in</a>
                             </div>
                         </div>
                         <!-- single contact information end -->
 
                         <!-- single contact information -->
-                        <div class="single-contact">
+                        <!-- <div class="single-contact">
                             <i class="fa-solid fa-location-crosshairs"></i>
                             <div class="information tmp-link-animation">
                                 <span>My Address</span>
                                 <span class="number">66 Broklyant, New York 3269</span>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- single contact information end -->
                     </div>
                     <!-- social area start -->
                     <div class="social-wrapper mt--20">
-                        <span class="subtitle">find with me</span>
+                        <span class="subtitle">Socials</span>
                         <div class="social-link">
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/sonacollegeoftech/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/school/sona-college-of-technology/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://twitter.com/SonaTech_Salem"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/SonaCollegeOfTechnology/"><i class="fa-brands fa-facebook-f"></i></a>
                         </div>
                     </div>
                     <!-- social area end -->
@@ -269,8 +344,8 @@
                 <div class="header-top">
                     <div class="logo">
                         <a href="index.html" class="logo-area">
-                            <img class="logo-dark" src="static/logo.png" alt="Sona College Of Tech" />
-                            <img class="logo-white" src="static/logo.png" alt="Sona College Of Tech" />
+                            <img class="logo-dark" src="static_2/logo.png" alt="Sona College Of Tech" />
+                            <img class="logo-white" src="static_2/logo.png" alt="Sona College Of Tech" />
                         </a>
                     </div>
                     <div class="close-menu">
@@ -316,38 +391,65 @@
 
     <!-- tmp banner area start -->
     <div class="tmp-banner-one-area" id="home">
-        <div class="container mt--50">
+        <div class="container mt--80">
             <div class="banner-one-main-wrapper">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="banner-right-content">
-                            <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1"
-                                src="static/banner-user-image-one.png" alt="banner-img" />
-                            <h2 class="banner-big-text-1 up-down">Conference 25</h2>
-                            <h2 class="banner-big-text-2 up-down-2">Conference</h2>
+                    <div class="col-lg-6 order-lg-3">
+                        <div class="banner-center-content">
+                            <div class="countdown-wrapper tmp-scroll-trigger tmp-fade-in animation-order-1 mb--30">
+                                <div class="countdown-container">
+                                    <div class="countdown-item">
+                                        <span id="days">00</span>
+                                        <p>Days</p>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <span id="hours">00</span>
+                                        <p>Hours</p>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <span id="minutes">00</span>
+                                        <p>Minutes</p>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <span id="seconds">00</span>
+                                        <p>Seconds</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <img class="img-box tmp-scroll-trigger tmp-zoom-in animation-order-1"
+                            src="static_2/clg.26.01.jpeg" alt="banner-img" style="opacity: 0.5;" />
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="inner">
-                            <span class="sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">CONF 25 - AN INTERNATIONAL CONFERENCE ON</span>
-                            <h1 class="title tmp-scroll-trigger tmp-fade-in animation-order-2 mt--5">
-                                (ICELLL '25) <br />
-                                <span class="header-caption">
+                            <span class="sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">AN
+                                INTERNATIONAL CONFERENCE ON</span>
+                            <h1 class="tmp-scroll-trigger tmp-fade-in animation-order-2 mt--5 fs--30">
+                                English Language, English Literature, Linguistics <br>(ICELLL 2.0) <br>
+                                <!-- <span class="header-caption">
                                     <span class="cd-headline clip is-full-width">
                                         <span class="cd-words-wrapper" style="width: 354.797px">
-                                            <b class="theme-gradient is-hidden">Literature Review.</b>
-                                            <b class="theme-gradient is-visible">Research Paper.</b>
-                                            <b class="is-hidden theme-gradient">Research Proposal.</b>
-                                            <b class="is-hidden theme-gradient">Research Page.</b>
-                                            <b class="is-hidden theme-gradient">Research Area.</b>
+                                            <b class="theme-gradient is-hidden">English Language</b>
+                                            <b class="theme-gradient is-visible">English Literature</b>
+                                            <b class="is-hidden theme-gradient">English Linguistics</b>
                                         </span>
                                     </span>
-                                </span>
+                                </span> -->
                             </h1>
-                            <p class="disc tmp-scroll-trigger tmp-fade-in animation-order-3" style="text-align: justify;">
-                                The conference is organized by the Department of Humanities & Languages, Sona College of Technology in association with the Department of English, Muscat College. This conference provides a global platform for authors to present and share their ideas, research discoveries and insights in the fields of English language, literature and linguistics. The thrust areas include studies on language structure, innovative teaching methods, curriculum development, language acquisition and assessment in the context of teaching English as a second or foreign language. The literature section encompasses the analysis and discussion of various genres, periods and themes in English literature.
+                            <p class="disc tmp-scroll-trigger tmp-fade-in animation-order-3"
+                                style="text-align: justify;">
+                                The International Conference on English Language, Literature, and Linguistics (ICELLL
+                                2.0) is a global event that brings together researchers, professionals, and scholars to
+                                discuss and share their experiences and research findings in English Language,
+                                Literature, and Linguistics. Topics include language structure, innovative teaching
+                                methods, curriculum development, language acquisition, and assessment in teaching
+                                English as a second or foreign language. The conference also covers literature,
+                                linguistics, and policy development. Authors are invited to submit original and
+                                unpublished research contributions in all areas.<br><br>
+                                May 7th & 8th, 2025.<br>
+                                Online Mode<br>
                             </p>
-                            <div class="button-area-banner-one tmp-scroll-trigger tmp-fade-in animation-order-4">
+                            <div class="button-area-banner-one tmp-scroll-trigger tmp-fade-in animation-order-4 mb--50">
                                 <a class="tmp-btn hover-icon-reverse radius-round" href="project-white.html">
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">Read More</span>
@@ -386,9 +488,8 @@
                             <i class="fa-light fa-pen-ruler"></i>
                         </div>
                         <h4 class="service-title">
-                            <a href="service-details.html">Literature Review</a>
+                            <a id="OpenClickable" onclick="OpenModel('lang')">Language</a>
                         </h4>
-                        <p class="service-para">120 Projects</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
@@ -398,9 +499,8 @@
                             <i class="fa-light fa-bezier-curve"></i>
                         </div>
                         <h4 class="service-title">
-                            <a href="service-details.html">Research Paper</a>
+                            <a id="OpenClickable" onclick="OpenModel('liter')">English Literature</a>
                         </h4>
-                        <p class="service-para">241 Projects</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
@@ -410,21 +510,8 @@
                             <i class="fa-light fa-lightbulb"></i>
                         </div>
                         <h4 class="service-title">
-                            <a href="service-details.html">Research Proposal</a>
+                            <a id="OpenClickable" onclick="OpenModel('liter')"">Linguistics</a>
                         </h4>
-                        <p class="service-para">240 Projects</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div
-                        class="service-card-v1 tmp-scroll-trigger tmp-fade-in animation-order-4 tmp-link-animation tmp-scroll-trigger--offscreen">
-                        <div class="service-card-icon">
-                            <i class="fa-light fa-envelope"></i>
-                        </div>
-                        <h4 class="service-title">
-                            <a href="service-details.html">Research Page</a>
-                        </h4>
-                        <p class="service-para">331 Prodect</p>
                     </div>
                 </div>
             </div>
@@ -433,132 +520,100 @@
     <!-- Tpm Service Area End -->
 
     <!-- Tpm Counter Area Start -->
-    <section class="counter-area" id="about">
-        <div class="container">
-            <h2
-                class="custom-title mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
-                About Our Institute
-            </h2>
-            <p class="counter-para">
-                The Institute of Business Consulting Consultants (IBCC) is a leading institution that provides expert advice and guidance to businesses. With years of experience, we have helped numerous companies improve their performance and achieve success.
-            </p>
-            <p class="counter-para">
-                Our team of consultants is made up of experienced professionals who are dedicated to providing the best possible advice and support to our clients. We are committed to helping businesses grow and succeed, and we are proud of the work we have done over the years.
-            </p>
-            <div class="ctc-wrapper mt--30 mb--30">
-                <p>If you are interested in learning more about our services, please contact us today. We would be happy to discuss your needs and provide you with the information you need to make an informed decision.</p>
-                <a href="contact-white.html" class="tmp-btn hover-icon-reverse radius-round">
-                    <span class="icon-reverse-wrapper">
-                        <span class="btn-text">Contact Us</span>
-                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                    </span>
-                </a>
-            </div>
-             
-            <div class="row g-5">
-                <div class="col-12 col-lg-6 col-xl-6 col-xxl-6">
-                    <div
-                        class="year-of-expariance-wrapper bg-blur-style-one tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
-                        <div class="year-expariance-wrap">
-                            <!-- <h2 class="year-number"><span class="counter">25 </span> </h2> -->
-                            <h2 class="counter year-number">
-                                <span class="odometer odometer-auto-theme" data-count="25">
-                                    <div class="odometer-inside">
-                                        <span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
-                                                class="odometer-digit-inner"><span class="odometer-ribbon"><span
-                                                        class="odometer-ribbon-inner"><span
-                                                            class="odometer-value">0</span></span></span></span></span>
+    <section class=" counter-area" id="about">
+                                <div class="container">
+                                    <h2
+                                        class="custom-title mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
+                                        About Our Institute
+                                    </h2>
+                                    <p class="counter-para" style="text-align: justify;">
+                                        Sona College of Technology traces its roots to Sri Karumuttu Thiagarajan
+                                        Chettiar, a renowned industrialist, freedom fighter, and educationist who
+                                        established Thiagarajar Polytechnic College in 1958. Established in 1997 by its
+                                        Founder Chairman, Sri M. S. Chockalingam, a distinguished textile industrialist
+                                        and educationist, Sona College of Technology continues to build on this strong
+                                        legacy under our current Chairman, Sri C.Valliappa, and Vice Chairmen, Mr.Chocko
+                                        Valliappa and Mr.Thyagu Valliappa.
+                                    </p>
+                                    <p class="counter-para" style="text-align: justify;">
+                                        The college enjoys autonomous status under the Anna University and holds a NAAC
+                                        A ++ accreditation with a CGPA of 3.65. It has a high NIRF Ranking falling
+                                        within the 11-50 band under the innovation category and 151-200 band under
+                                        Engineering Category. As a research and innovation focused institution, the
+                                        college prides in its 36 Advanced Research centres which undertake cutting-edge
+                                        research across disciplines and have developed advanced systems for high profile
+                                        national projects like Chandrayaan-3 and Gaganyaan mission. Sona's global
+                                        perspective has resulted in academic collaborations with nationals institutions
+                                        like IIT (M) and international universities like Purdue University, Strathclyde,
+                                        University of Burgundy, to name a few. The faculty of Sona have been
+                                        consistently ranked within the top 3 position under the faculty performance
+                                        rating by NPTEL among 7000 colleges since the inception of the ranking in 2018.
+                                        Sona NPTEL Local Chapter is rated "AAA" rating (17th Rank) in July-Dec 2024
+                                        NPTEL exams among 7,000 colleges in India.
+                                    </p>
+                                    <p class="counter-para" style="text-align: justify;">
+                                        Sona College of Technology has been a highly awarded institution at the national
+                                        and state levels. It has been recognized as the 'Best Industry-Linked
+                                        Institution', by the Confederation of Indian Industry and All India Council for
+                                        Technical Education (AICTE-CII), for seven consecutive times. Recently, Sona has
+                                        been honoured with the prestigious Outstanding Institution Award-2024 by the
+                                        National Institute of Technical Teachers Training and Research (NITTTR),
+                                        Chandigarh. The college has received the IE(I) - Institution of Engineers'
+                                        (India) Engineering Education Excellence Award (Silver and Bronze Categories)
+                                        for the past three years. Sona stands tall as one of the best institutions for
+                                        world class technical education.
+                                    </p>
+                                    <div class="ctc-wrapper mt--30 mb--30">
+                                        <p>If you are interested in learning more about our institution, please contact
+                                            us today. We would be happy to discuss your needs and provide you with the
+                                            information you need to make an informed decision.</p>
+                                        <a href="https://www.sonatech.ac.in/contact/"
+                                            class="tmp-btn hover-icon-reverse radius-round">
+                                            <span class="icon-reverse-wrapper">
+                                                <span class="btn-text">Contact Us</span>
+                                                <span class="btn-icon"><i
+                                                        class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                                <span class="btn-icon"><i
+                                                        class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
                                     </div>
-                                </span>
-                            </h2>
-                            <h3 class="year-title">
-                                Years Of <br />
-                                experience
-                            </h3>
-                        </div>
-                        <p class="year-para">
-                            Business consulting consultants provide expert advice and guida
-                            the a businesses to help theme their performance efficiency
-                        </p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 col-xl-6 col-xxl-6">
-                    <div class="counter-area-right-content">
-                        <div class="row g-5">
-                            <div class="col-lg-6 col-sm-6 col-12">
-                                <div
-                                    class="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
-                                    <h3 class="counter counter-title">
-                                        <span class="odometer odometer-auto-theme" data-count="20">
-                                            <div class="odometer-inside">
-                                                <span class="odometer-digit"><span
-                                                        class="odometer-digit-spacer">8</span><span
-                                                        class="odometer-digit-inner"><span class="odometer-ribbon"><span
-                                                                class="odometer-ribbon-inner"><span
-                                                                    class="odometer-value">0</span></span></span></span></span>
-                                            </div>
-                                        </span>k+
-                                    </h3>
-                                    <p class="counter-para">Our Project Complete</p>
+                                    <h2
+                                        class=" mt--30 mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
+                                        About Department of Humanities and Languages
+                                    </h2>
+                                    <p class="counter-para" style="text-align: justify;">
+                                        One of the founding departments of Sona College of Technology, the Department of
+                                        Humanities and Languages came into existence along with the establishment of the
+                                        college in 1997. The main objective of the department is to develop
+                                        communicative competence and performance of the students in English. A team of
+                                        well experienced and vibrant English faculty with proven excellence in teaching
+                                        and research carries forward the mission of the institution.
+                                    </p>
+                                    <p class="counter-para" style="text-align: justify;">
+                                        Recently, the department has signed an MOU with the University of Complutense,
+                                        Madrid to establish a Systemic Functional Linguistics Lab that will serve as a
+                                        Centre of Excellence for linguistic research and carry out research in the areas
+                                        of discourse analysis, multilingual education, text generation and computational
+                                        linguistics and to have students and faculty exchange programmes.
+                                    </p>
+
+                                    <div class="ctc-wrapper mt--30 mb--30">
+                                        <p>If you are interested in learning more about our institution, please contact
+                                            us today. We would be happy to discuss your needs and provide you with the
+                                            information you need to make an informed decision.</p>
+                                        <a href="https://www.sonatech.ac.in/contact/"
+                                            class="tmp-btn hover-icon-reverse radius-round">
+                                            <span class="icon-reverse-wrapper">
+                                                <span class="btn-text">Contact Us</span>
+                                                <span class="btn-icon"><i
+                                                        class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                                <span class="btn-icon"><i
+                                                        class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6 col-12">
-                                <div
-                                    class="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
-                                    <h3 class="counter counter-title">
-                                        <span class="odometer odometer-auto-theme" data-count="10">
-                                            <div class="odometer-inside">
-                                                <span class="odometer-digit"><span
-                                                        class="odometer-digit-spacer">8</span><span
-                                                        class="odometer-digit-inner"><span class="odometer-ribbon"><span
-                                                                class="odometer-ribbon-inner"><span
-                                                                    class="odometer-value">0</span></span></span></span></span>
-                                            </div>
-                                        </span>k+
-                                    </h3>
-                                    <p class="counter-para">Our Natural Products</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6 col-12">
-                                <div
-                                    class="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
-                                    <h3 class="counter counter-title">
-                                        <span class="odometer odometer-auto-theme" data-count="200">
-                                            <div class="odometer-inside">
-                                                <span class="odometer-digit"><span
-                                                        class="odometer-digit-spacer">8</span><span
-                                                        class="odometer-digit-inner"><span class="odometer-ribbon"><span
-                                                                class="odometer-ribbon-inner"><span
-                                                                    class="odometer-value">0</span></span></span></span></span>
-                                            </div>
-                                        </span>+
-                                    </h3>
-                                    <p class="counter-para">Clients Reviews</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6 col-12">
-                                <div
-                                    class="counter-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4 tmp-scroll-trigger--offscreen">
-                                    <h3 class="counter counter-title">
-                                        <span class="odometer odometer-auto-theme" data-count="1000">
-                                            <div class="odometer-inside">
-                                                <span class="odometer-digit"><span
-                                                        class="odometer-digit-spacer">8</span><span
-                                                        class="odometer-digit-inner"><span class="odometer-ribbon"><span
-                                                                class="odometer-ribbon-inner"><span
-                                                                    class="odometer-value">0</span></span></span></span></span>
-                                            </div>
-                                        </span>+
-                                    </h3>
-                                    <p class="counter-para">our Satisfied Clientd</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <!-- Tpm Counter Area End -->
     <!-- tmp skill area start -->
@@ -567,9 +622,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="timeline-wrapper">
-                        <h2 class="custom-title mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
-                            Project Journey
-                            <span><img src="static/custom-line.png" alt="custom-line" /></span>
+                        <h2
+                            class="custom-title mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
+                            Conference Journey
+                            <span><img src="static_2/custom-line.png" alt="custom-line" /></span>
                         </h2>
                         <div class="timeline train-timeline">
                             <div class="timeline-items">
@@ -581,18 +637,7 @@
                                     </div>
                                     <div class="timeline-content">
                                         <h6>Phase 1</h6>
-                                        <p>Initial planning</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="station">
-                                        <div class="train-stop completed">
-                                            <span class="tick-mark">✔</span>
-                                        </div>
-                                    </div>
-                                    <div class="timeline-content">
-                                        <h6>Phase 2</h6>
-                                        <p>Wireframing</p>
+                                        <p>Introduction</p>
                                     </div>
                                 </div>
                                 <div class="timeline-item active">
@@ -600,8 +645,17 @@
                                         <div class="train-stop"></div>
                                     </div>
                                     <div class="timeline-content">
+                                        <h6>Phase 2</h6>
+                                        <p>Call For Papers</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="station">
+                                        <div class="train-stop"></div>
+                                    </div>
+                                    <div class="timeline-content">
                                         <h6>Phase 3</h6>
-                                        <p>Development</p>
+                                        <p>Author Meeting (Online)</p>
                                     </div>
                                 </div>
                                 <div class="timeline-item">
@@ -610,7 +664,7 @@
                                     </div>
                                     <div class="timeline-content">
                                         <h6>Phase 4</h6>
-                                        <p>Testing</p>
+                                        <p>Shortlisting</p>
                                     </div>
                                 </div>
                                 <div class="timeline-item">
@@ -619,28 +673,22 @@
                                     </div>
                                     <div class="timeline-content">
                                         <h6>Phase 5</h6>
-                                        <p>Deployment</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="station">
-                                        <div class="train-stop"></div>
-                                    </div>
-                                    <div class="timeline-content">
-                                        <h6>Phase 6</h6>
-                                        <p>Maintenance</p>
+                                        <p>Publication</p>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="description">
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    
-    
+
+
+
     <!-- tmp skill area end -->
     <!-- Tpm Latest Service Area Start -->
     <section class="latest-service-area tmp-section-gapTop">
@@ -648,18 +696,16 @@
             <div class="section-head mb--50">
                 <div
                     class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
-                    <span class="subtitle">Instructions</span>
+                    <span class="subtitle">Topics of Interest</span>
                 </div>
                 <h2
                     class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
-                    Instructions To The  <br />
-                    Applications & Authors
+                    Thrust Areas
                 </h2>
                 <p
                     class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
-                    Business consulting consultants provide expert advice and guida
-                    businesses to help them improve their performance, efficiency, and
-                    organizational
+                    Explore cutting-edge research in language, literature, and linguistics through our comprehensive
+                    conference, fostering intellectual discourse and scholarly collaboration.
                 </p>
             </div>
             <div class="row">
@@ -667,48 +713,164 @@
                     <div
                         class="service-card-v2 tmponhover tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
                         <h2 class="service-card-num">
-                            <span>01.</span>A Portfolio of Creativity
+                            English Language
                         </h2>
                         <p class="service-para">
-                            Business consulting consultants provide expert advice and guida
-                            the a businesses to help theme their performance efficiency
+                            • English Language Education in the Digital Era • New Trends in World Literature and
+                            Comparative Studies • A New Synthesis: Interdisciplinary Approaches to Literature, Culture,
+                            and Language • Empowering ELT Teachers: Education and Development • Integrating Digital
+                            Media into Storytelling
+                            • A Global Classroom: Language, Literature, and Culture in the 21st Century • Manipulation
+                            of language: Sophisticated AI tools can generate convincing but misleading content
+                            • English Language Acquisition and Learning • English Language Teaching and Methodology •
+                            English Language Curriculum Development • English Language Assessment • English for Specific
+                            Purposes • Interpersonal and Intercultural Communication • E-learning and Flipped Classroom
+                            • English Language Teaching Pedagogy • The Use of ICT in English Language Teaching/Learning
+                            • Multimedia Language Learning • National Language Policy (NLP) • Language and Technology •
+                            Language and AI Ethics
+
                         </p>
                     </div>
                     <div
                         class="service-card-v2 tmponhover tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
                         <h2 class="service-card-num">
-                            <span>02.</span>My Portfolio of Innovation
+                            English Literature
                         </h2>
                         <p class="service-para">
-                            My work is driven by the belief that thoughtful design and
-                            strategic planning can empower brands, transform businesses
+                            • Contemporary Literary Theories • Class/Race/Gender & Caste conflict • Children's
+                            Literature • Diaspora Literature • Eco- Literature • Feminism • Fantasy Literature •
+                            Modern/Post-modern Literature • Post-Colonial Literature • Subaltern Studies • Translation
+                            studies
                         </p>
                     </div>
                     <div
                         class="service-card-v2 tmponhover tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
                         <h2 class="service-card-num">
-                            <span>03.</span>A Showcase of My Projects
+                            English Linguistics
                         </h2>
                         <p class="service-para">
-                            In this portfolio, you'll find a curated selection of projects
-                            that highlight my skills in [Main Areas, e.g., responsive web
-                            design
+                            • Computational Linguistics • Comparative Linguistics • Dialectology • Etymology •
+                            Historical Linguistics • Lexicology • Morphology • Neurolinguistics • Orthography •
+                            Pragmatics • Rhetoric
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="service-card-user-image">
-                        <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1 tmp-scroll-trigger--offscreen"
-                            src="static/latest-services-user-image-white.png" alt="latest-user-image" />
+                        <img class="img-box tmp-scroll-trigger tmp-zoom-in animation-order-1 tmp-scroll-trigger--offscreen"
+                            src="static_2/clg.26.01.jpeg" alt="latest-user-image" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Tpm Latest Service Area End -->
 
+    <!-- Tpm Latest Service Area End -->
+    <section class="latest-service-area tmp-section-gapTop" id="registration">
+        <div class="container">
+            <div class="section-head mb--50">
+                <div
+                    class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
+                    <span class="subtitle">Registration</span>
+                </div>
+                <h2
+                    class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
+                    Conference Registration <br />
+                    Details & Fees
+                </h2>
+                <p
+                    class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
+                    Register for the International Conference on English Language, Literature & Linguistics. Early bird
+                    registrations get special discounted rates. <br>Authors can register after the acceptance of their
+                    submitted papers.
+                    Registration fee (India) inclusive of 18% GST/-*.
+
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="table-responsive ">
+                        <table class="table table-bordered">
+                            <thead class="table-dark text-center">
+                                <tr>
+                                    <th scope="col"><b>Category</b></th>
+                                    <th scope="col"><b>National</b></th>
+                                    <th scope="col"><b>International</b></th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                                <tr>
+                                    <td><b>Academicians</b></td>
+                                    <td><b>₹ 1,000</b></td>
+                                    <td><b>$ 20 USD</b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Industry Persons</b></td>
+                                    <td><b>₹ 1,000</b></td>
+                                    <td><b>$ 20 USD</b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Research Scholars</b></td>
+                                    <td><b>₹ 500</b></td>
+                                    <td><b>$ 10 USD</b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Students</b></td>
+                                    <td><b>₹ 500</b></td>
+                                    <td><b>$ 10 USD</b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Attendees</b></td>
+                                    <td><b>₹ 500</b></td>
+                                    <td><b>$ 10 USD</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="registration-buttons text-center mt-4">
+                        <a class="tmp-btn hover-icon-reverse radius-round mb-3 me-3" href="#">
+                            <span class="icon-reverse-wrapper">
+                                <span class="btn-text">Register Now (INR)</span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                            </span>
+                        </a>
+                        <a class="tmp-btn hover-icon-reverse radius-round mb-3" href="#">
+                            <span class="icon-reverse-wrapper">
+                                <span class="btn-text">Register Now (USD)</span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="registration-notes mt-4">
+                        <h4 class="mb-3">Important Notes:</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-success me-2"></i> Shortlisted
+                                papers will be published in Clarivate Analytics of Web of Science Journal</li>
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-success me-2"></i> Paper submission
+                                link opens on 22nd February, 2025</li>
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-success me-2"></i> Communication of
+                                Review Comments: 25th March, 2025</li>
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-success me-2"></i> Submission of
+                                modified Manuscript: 30th March, 2025</li>
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-success me-2"></i> Intimation of
+                                Final Acceptance: 11th April, 2025</li>
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-success me-2"></i> Last Date of
+                                Registration: 30th April, 2025</li>
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-success me-2"></i> Conference
+                                Timings: Indian presentations: 10 am to 5 pm / Overseas presentations: 12 noon to 6
+                                pm(IST)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Tpm Education Experience Area Start -->
-    <section class="education-experience tmp-section-gapTop">
+    <section class="education-experience tmp-section-gapTop" id="speakers">
         <div class="container">
             <div class="section-head mb--50">
                 <div
@@ -717,94 +879,79 @@
                 </div>
                 <h2
                     class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
-                    Empowering Creativity <br />
-                    through
+                    Keynote Speakers
                 </h2>
-                <p
-                    class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
-                    Business consulting consultants provide expert advice and guida
-                    businesses to help them improve their performance, efficiency, and
-                    organizational
-                </p>
             </div>
-            <h2
+            <!-- <h2
                 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
                 Keynote Speakers
-                <span><img src="static/custom-line.png" alt="custom-line" /></span>
+                <span><img src="static_2/custom-line.png" alt="custom-line" /></span> -->
             </h2>
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="speaker-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen equal-height">
+                    <div
+                        class="speaker-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen equal-height">
                         <div class="marquee-border"></div>
                         <div class="speaker-image">
-                            <img src="static/portfoli-img-1.jpg" alt="Speaker 1" class="img-fluid" />
+                            <img src="static_2/Unknown.jpeg" alt="Speaker 1" class="img-fluid" />
                         </div>
                         <div class="speaker-info mt-3">
-                            <h4 class="speaker-name">Dr. Sarah Johnson</h4>
-                            <p class="speaker-title">Professor of English Literature<br> Harvard University</p>
+                            <h4 class="speaker-name">Prof. Christian M.I.M. Matthiessen</h4>
+                            <p class="speaker-title">FUNCAP Research </p>
                             <p class="speaker-description">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad laboriosam natus, magnam obcaecati vel at provident maiores reprehenderit dolor quae, labore reiciendis repellat itaque corrupti eum odio assumenda neque omnis!
+                                Dept. of English Studies, Philology College Universidad Complutense de Madrid, Spain.
                             </p>
-                            <a href="#" class="read-more-btn">Read More
-                                <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span>
-                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="speaker-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen equal-height">
+                    <div
+                        class="speaker-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen equal-height">
                         <div class="marquee-border"></div>
                         <div class="speaker-image">
-                            <img src="static/portfoli-img-1.jpg" alt="Speaker 2" class="img-fluid" />
+                            <img src="static_2/dhanvel.40.39.jpeg" alt="Speaker 1" class="img-fluid" />
                         </div>
                         <div class="speaker-info mt-3">
-                            <h4 class="speaker-name">Prof. Michael Chen</h4>
-                            <p class="speaker-title">Director of Language Studies<br> Stanford University</p>
+                            <h4 class="speaker-name">Dr.S.P.Dhanavel</h4>
+                            <p class="speaker-title">Professor </p>
                             <p class="speaker-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magni exercitationem sed officia recusandae quia, ullam quidem mollitia possimus, saepe veniam odio non ipsa quo totam ut natus in amet!
+                                Dept. of Humanities and Social Sciences IIT, Madras
                             </p>
-                            <a href="#" class="read-more-btn">Read More
-                                <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span>
-                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div
+                        class="speaker-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4 tmp-scroll-trigger--offscreen equal-height">
+                        <div class="marquee-border"></div>
+                        <div class="speaker-image">
+                            <img src="static_2/Merin.jpeg" alt="Speaker 4" class="img-fluid" />
+                        </div>
+                        <div class="speaker-info mt-3">
+                            <h4 class="speaker-name">Dr.Merin Simi Raj</h4>
+                            <p class="speaker-title">Associate Professor</p>
+                            <p class="speaker-description">
+                                Dept. of Humanities and Social Sciences IIT, Madras </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="speaker-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen equal-height">
+                    <div
+                        class="speaker-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4 tmp-scroll-trigger--offscreen equal-height">
                         <div class="marquee-border"></div>
                         <div class="speaker-image">
-                            <img src="static/portfoli-img-1.jpg" alt="Speaker 3" class="img-fluid" />
+                            <img src="static_2/selvin.36.13.jpeg" alt="Speaker 4" class="img-fluid" />
                         </div>
                         <div class="speaker-info mt-3">
-                            <h4 class="speaker-name">Dr. Emily Sam</h4>
-                            <p class="speaker-title">Head of Digital Learning<br> MIT</p>
+                            <h4 class="speaker-name">Dr.Selvin Vedamanickam </h4>
+                            <p class="speaker-title">Professor of English, St. Joseph University, Tindivanam </p>
                             <p class="speaker-description">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis culpa, tenetur eligendi voluptatum sint accusantium, numquam quam, earum facilis deserunt provident eveniet iste ducimus repellendus obcaecati tempora
-                            </p>
-                            <a href="#" class="read-more-btn">Read More
-                                <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span>
-                            </a>
+                                Chief Technology Officer - DFT Group of Institutions, Chennai </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="speaker-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4 tmp-scroll-trigger--offscreen equal-height">
-                        <div class="marquee-border"></div>
-                        <div class="speaker-image">
-                            <img src="static/portfoli-img-1.jpg" alt="Speaker 4" class="img-fluid" />
-                        </div>
-                        <div class="speaker-info mt-3">
-                            <h4 class="speaker-name">Prof. James Wilson</h4>
-                            <p class="speaker-title">Chair of English Department<br> Oxford University</p>
-                            <p class="speaker-description">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia facere rem dolore quod rerum fugit voluptates officia quibusdam accusamus fuga debitis incidunt a ipsa, voluptas explicabo! Ea harum libero minima!                            </p>
-                            <a href="#" class="read-more-btn">Read More
-                                <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>            
+            </div>
             <!-- <div class="experiences-wrapper">
                 <div class="row">
                     <div class="col-lg-6">
@@ -812,7 +959,7 @@
                             <h2
                                 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
                                 Committee Members
-                                <span><img src="static/custom-line.png" alt="custom-line" /></span>
+                                <span><img src="static_2/custom-line.png" alt="custom-line" /></span>
                             </h2>
 
                             <div
@@ -842,43 +989,47 @@
                     <div class="col-lg-6">
                         <div class="experiences-wrap-right-content">
                             <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1 tmp-scroll-trigger--offscreen"
-                                src="static/expert-img.jpg" alt="expert-img" />
+                                src="static_2/expert-img.jpg" alt="expert-img" />
                         </div>
                     </div>
                 </div>
             </div> -->
         </div>
     </section>
-    <div class="our-supported-company-area tmp-section-gapTop">
+    <!-- <div class="our-supported-company-area tmp-section-gapTop">
         <div class="section-title text-center mb-60">
-            <h2 class="title">Our Sponsors</h2>
+            <h2 class="title">Our Institutions</h2>
             <div class="divider"></div>
         </div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                    <div class="support-company-logo square-logo tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
-                        <img src="static//company-logo-1.svg" alt="Sponsor Logo 1" />
+                    <div
+                        class="support-company-logo square-logo tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
+                        <img src="static_2//company-logo-1.svg" alt="Sponsor Logo 1" />
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                    <div class="support-company-logo square-logo tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
-                        <img src="static//company-logo-2.svg" alt="Sponsor Logo 2" />
+                    <div
+                        class="support-company-logo square-logo tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
+                        <img src="static_2//company-logo-2.svg" alt="Sponsor Logo 2" />
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                    <div class="support-company-logo square-logo tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
-                        <img src="static//company-logo-3.svg" alt="Sponsor Logo 3" />
+                    <div
+                        class="support-company-logo square-logo tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
+                        <img src="static_2//company-logo-3.svg" alt="Sponsor Logo 3" />
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                    <div class="support-company-logo square-logo tmp-scroll-trigger tmp-fade-in animation-order-4 tmp-scroll-trigger--offscreen">
-                        <img src="static//company-logo-4.svg" alt="Sponsor Logo 4" />
+                    <div
+                        class="support-company-logo square-logo tmp-scroll-trigger tmp-fade-in animation-order-4 tmp-scroll-trigger--offscreen">
+                        <img src="static_2//company-logo-4.svg" alt="Sponsor Logo 4" />
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Tpm Our Supported Company Area End -->
 
     <!-- Tpm Latest Portfolio Area Start -->
@@ -887,44 +1038,41 @@
             <div class="section-head mb--60">
                 <div
                     class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
-                    <span class="subtitle">Our Committee Member</span>
+                    <span class="subtitle">Management Team</span>
                 </div>
                 <h2
                     class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
                     Meet Our <br />
-                    Committee Members
+                    Management Members
                 </h2>
-                <p
-                    class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
-                    Our committee members are dedicated to ensuring the success of our conference. 
-                </p>
             </div>
 
             <div class="row">
                 <div class="section-head mb--10">
-                    <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
-                        <span class="subtitle">Chief Patron</span>
+                    <div
+                        class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
+                        <span class="subtitle">Chief Patron's</span>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-6">
+                <div class="col-lg-4 col-sm-12">
                     <div
                         class="latest-portfolio-card tmp-hover-link tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
                         <div class="portfoli-card-img">
                             <div class="img-box v2">
                                 <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1 tmp-scroll-trigger--offscreen"
-                                    href="project-details-white.html">
-                                    <img class="w-100" src="static/portfoli-img-1.jpg" alt="Thumbnail" />
+                                    href="##">
+                                    <img class="w-100" src="static_2/Mt/1.png" alt="Thumbnail" />
                                 </a>
                             </div>
                         </div>
                         <div class="portfolio-card-content-wrap">
                             <div class="content-left">
                                 <h3 class="portfolio-card-title">
-                                    <a class="link" href="project-details-white.html">Mr. C. Valliappa</a>
+                                    <a class="link" href="##">Mr. C. Valliappa</a>
                                 </h3>
                                 <p class="portfoli-card-para">Chairman, Sona Institutions, Salem.</p>
                             </div>
-                            <a href="project-details-white.html" class="tmp-arrow-icon-btn">
+                            <a href="###" class="tmp-arrow-icon-btn">
                                 <div class="btn-inner">
                                     <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
                                     <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
@@ -934,25 +1082,27 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-sm-6">
+                <div class="col-lg-4 col-sm-12">
                     <div
                         class="latest-portfolio-card tmp-hover-link tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
                         <div class="portfoli-card-img">
                             <div class="img-box v2">
                                 <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1 tmp-scroll-trigger--offscreen"
-                                    href="project-details-white.html">
-                                    <img class="w-100" src="static/portfoli-img-2.jpg" alt="Thumbnail" />
+                                    href="###">
+                                    <img class="w-100"
+                                        src="static_2/Mt/2.png"
+                                        alt="Thumbnail" />
                                 </a>
                             </div>
                         </div>
                         <div class="portfolio-card-content-wrap">
                             <div class="content-left">
                                 <h3 class="portfolio-card-title">
-                                        <a class="link" href="project-details-white.html">Mr. Chocko Valliappa</a>
+                                    <a class="link" href="##">Mr. Chocko Valliappa</a>
                                 </h3>
                                 <p class="portfoli-card-para">Vice Chairman, Sona Institutions, Salem.</p>
                             </div>
-                            <a href="project-details-white.html" class="tmp-arrow-icon-btn">
+                            <a href="##" class="tmp-arrow-icon-btn">
                                 <div class="btn-inner">
                                     <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
                                     <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
@@ -962,25 +1112,25 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-sm-6">
+                <div class="col-lg-4 col-sm-12">
                     <div
                         class="latest-portfolio-card tmp-hover-link tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
                         <div class="portfoli-card-img">
                             <div class="img-box v2">
                                 <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1 tmp-scroll-trigger--offscreen"
-                                    href="project-details-white.html">
-                                    <img class="w-100" src="static/portfoli-img-3.jpg" alt="Thumbnail" />
+                                    href="###">
+                                    <img class="w-100" src="static_2/Mt/3.png" alt="Thumbnail" />
                                 </a>
                             </div>
                         </div>
                         <div class="portfolio-card-content-wrap">
                             <div class="content-left">
                                 <h3 class="portfolio-card-title">
-                                    <a class="link" href="project-details-white.html">Mr. Thyagu Valliappa</a>
+                                    <a class="link" href="###">Mr. Thyagu Valliappa</a>
                                 </h3>
                                 <p class="portfoli-card-para">Vice-Chairman, Sona Institutions, Salem.</p>
                             </div>
-                            <a href="project-details-white.html" class="tmp-arrow-icon-btn">
+                            <a href="###" class="tmp-arrow-icon-btn">
                                 <div class="btn-inner">
                                     <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
                                     <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
@@ -992,67 +1142,80 @@
             </div>
             <div class="row mt--10">
                 <div class="section-head">
-                    <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
-                        <span class="subtitle">PATRON & CONVENER</span>
+                    <div
+                        class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
+                        <span class="subtitle">PATRON</span>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-6">
-                    <div class="latest-portfolio-card tmp-hover-link tmp-scroll-trigger tmp-fade-in animation-order-4 tmp-scroll-trigger--offscreen">
-                        <div class="portfoli-card-img">
-                            <div class="img-box v2">
-                                <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1 tmp-scroll-trigger--offscreen"
-                                    href="project-details-white.html">
-                                    <img class="w-100" src="static/portfoli-img-4.jpg" alt="Thumbnail" />
+                <div class="row gap-4 mt--10 align-items-center justify-content-center">
+                    <div class="col-lg-6 col-sm-6">
+                        <div
+                            class="latest-portfolio-card tmp-hover-link tmp-scroll-trigger tmp-fade-in animation-order-4 tmp-scroll-trigger--offscreen">
+                            <div class="portfoli-card-img">
+                                <div class="img-box v2">
+                                    <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1 tmp-scroll-trigger--offscreen"
+                                        href="###">
+                                        <img class="w-100" src="static_2/Princi.png" alt="Thumbnail" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-content-wrap">
+                                <div class="content-left">
+                                    <h3 class="portfolio-card-title">
+                                        <a class="link" href="###">Dr. S.R.R. Senthilkumar</a>
+                                    </h3>
+                                    <p class="portfoli-card-para">Principal, Sona College of Technology, Salem.<br>
+                                        Patron
+                                    </p>
+                                </div>
+                                <a href="####" class="tmp-arrow-icon-btn">
+                                    <div class="btn-inner">
+                                        <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
+                                        <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
+                                    </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="portfolio-card-content-wrap">
-                            <div class="content-left">
-                                <h3 class="portfolio-card-title">
-                                    <a class="link" href="project-details-white.html">Dr. S.R.R. Senthilkumar</a>
-                                </h3>
-                                <p class="portfoli-card-para">Principal, Sona College of Technology, Salem.</p>
-                            </div>
-                            <a href="project-details-white.html" class="tmp-arrow-icon-btn">
-                                <div class="btn-inner">
-                                    <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
-                                    <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
-                                </div>
-                            </a>
+                    </div>
+                    <div class="section-head">
+                        <div
+                            class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
+                            <span class="subtitle">Convenor</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-6 col-sm-6">
-                    <div class="latest-portfolio-card tmp-hover-link tmp-scroll-trigger tmp-fade-in animation-order-5 tmp-scroll-trigger--offscreen">
-                        <div class="portfoli-card-img">
-                            <div class="img-box v2">
-                                <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1 tmp-scroll-trigger--offscreen"
-                                    href="project-details-white.html">
-                                    <img class="w-100" src="static/portfoli-img-4.jpg" alt="Thumbnail" />
+                    <div class="col-lg-6 col-sm-6">
+                        <div
+                            class="latest-portfolio-card tmp-hover-link tmp-scroll-trigger tmp-fade-in animation-order-5 tmp-scroll-trigger--offscreen">
+                            <div class="portfoli-card-img">
+                                <div class="img-box v2">
+                                    <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1 tmp-scroll-trigger--offscreen"
+                                        href="##">
+                                        <img class="w-100" src="static_2/renunga.03.08.jpeg" alt="Thumbnail" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-content-wrap">
+                                <div class="content-left">
+                                    <h3 class="portfolio-card-title">
+                                        <a class="link" href="#">Dr. M. Renuga</a>
+                                    </h3>
+                                    <p class="portfoli-card-para">
+                                        Professor & HOD, Department of English, Sona College of Technology<br>
+                                        Convenor
+                                    </p>
+                                </div>
+                                <a href="###" class="tmp-arrow-icon-btn">
+                                    <div class="btn-inner">
+                                        <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
+                                        <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
+                                    </div>
                                 </a>
                             </div>
-                        </div>
-                        <div class="portfolio-card-content-wrap">
-                            <div class="content-left">
-                                <h3 class="portfolio-card-title">
-                                    <a class="link" href="project-details-white.html">Dr. S.Chandrasekaran </a>
-                                </h3>
-                                <p class="portfoli-card-para">
-                                    Professor, Sona College of Technology, Salem.
-                                </p>
-                            </div>
-                            <a href="project-details-white.html" class="tmp-arrow-icon-btn">
-                                <div class="btn-inner">
-                                    <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
-                                    <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
-                                </div>
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-             
+
         </div>
     </div>
     <section class="blog-and-news-are tmp-section-gap">
@@ -1066,24 +1229,22 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div
-                        class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
-                        <div class="img-box">
-                            <a href="blog-details-white.html">
-                                <img class="w-100" src="static/blog-img-1.jpg" alt="Blog Thumbnail" />
-                            </a>
-                        </div>
+                        class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
                         <div class="blog-content-wrap">
-                            <h3 class="blog-title">
-                                <a class="link" href="blog-details-white.html">Dr. M. Renuga</a>
+                            <!-- <div class="speaker-image">
+                                <img src="static_2/Kanchana.jpeg" alt="Speaker 1" class="img-fluid" />
+                            </div> -->
+                            <h3 class="blog-title mt--10">
+                                <a class="link" href="#">Dr. B. Kanchanamala</a>
                             </h3>
                             <div class="more-btn tmp-link-animation">
                                 <p class="portfoli-card-para">
-                                    Professor / HOD, Department of Humanities & Languages, Sona College Of Technology, Salem.<br><br>
-                                    Contact No. +91 98436-82314<br>
-                                    Mail ID: renugam@sonatech.ac.in
+                                    Assistant Professor, Department of Humanities & Languages, Sona College Of
+                                    Technology,
+                                    Salem.<br><br>
+                                    Contact No.+91 9842963838<br>
+                                    Mail ID: kanchana@sonatech.ac.in
                                 </p>
-                                <a href="blog-details-white.html" class="read-more-btn">Read More
-                                    <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -1091,23 +1252,21 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div
                         class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
-                        <div class="img-box">
-                            <a href="blog-details-white.html">
-                                <img class="w-100" src="static/blog-img-2.jpg" alt="Blog Thumbnail" />
-                            </a>
-                        </div>
                         <div class="blog-content-wrap">
-                            <h3 class="blog-title">
-                                <a class="link" href="blog-details-white.html">Dr. Shahin Banu</a>
+                            <!-- <div class="speaker-image">
+                                <img src="static_2/Kanchana.jpeg" alt="Speaker 1" class="img-fluid" />
+                            </div> -->
+                            <h3 class="blog-title mt--10">
+                                <a class="link" href="#####">Dr. M. Saraswathy</a>
                             </h3>
                             <div class="more-btn tmp-link-animation">
                                 <p class="portfoli-card-para">
-                                    Professor, Department of Humanities & Languages, Sona College Of Technology, Salem.<br><br>
-                                    Contact No. +91 98436-82314<br>
-                                    Mail ID: shahinbanu@sonatech.ac.in
+                                    Assistant Professor, Department of Humanities & Languages, Sona College Of
+                                    Technology,
+                                    Salem.<br><br>
+                                    Contact No: +91 9942022481<br>
+                                    Mail ID: saraswathy@sonatech.ac.in
                                 </p>
-                                <a href="blog-details-white.html" class="read-more-btn">Read More
-                                    <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -1115,23 +1274,43 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div
                         class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
-                        <div class="img-box">
-                            <a href="blog-details-white.html">
-                                <img class="w-100" src="static/blog-img-3.jpg" alt="Blog Thumbnail" />
-                            </a>
-                        </div>
                         <div class="blog-content-wrap">
-                            <h3 class="blog-title">
-                                <a class="link" href="blog-details-white.html">Dr. M Kanachana</a>
+                            <!-- <div class="speaker-image">
+                                <img src="static_2/Shahin.jpeg" alt="Speaker 1" class="img-fluid" />
+                            </div> -->
+                            <h3 class="blog-title mt--10">
+                                <a class="link" href="#####">Dr. C. Shahin Banu</a>
                             </h3>
                             <div class="more-btn tmp-link-animation">
                                 <p class="portfoli-card-para">
-                                    Professor / HOD, Department of Humanities & Languages, Sona College Of Technology, Salem.<br><br>
-                                    Contact No. +91 98436-82314<br>
-                                    Mail ID: kanachana@sonatech.ac.in
+                                    Assistant Professor, Department of Humanities & Languages, Sona College Of
+                                    Technology,
+                                    Salem.<br><br>
+                                    Contact No. +91 9942022481<br>
+                                    Mail ID: shahin@sonatech.ac.in
                                 </p>
-                                <a href="blog-details-white.html" class="read-more-btn">Read More
-                                    <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div
+                        class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
+                        <div class="blog-content-wrap">
+                            <!-- <div class="speaker-image">
+                                <img src="static_2/Kanchana.jpeg" alt="Speaker 1" class="img-fluid" />
+                            </div> -->
+                            <h3 class="blog-title mt--10">
+                                <a class="link" href="#####">Mr. R. Sathees Kumar</a>
+                            </h3>
+                            <div class="more-btn tmp-link-animation">
+                                <p class="portfoli-card-para">
+                                    Assistant Professor, Department of Humanities & Languages, Sona College Of
+                                    Technology,
+                                    Salem.<br><br>
+                                    Contact No: +91 9500583033<br>
+                                    Mail ID: satheeskumar@sonatech.ac.in
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1145,27 +1324,22 @@
                     <span class="subtitle">INTERNATIONAL ADVISORY COMMITTEE</span>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" style="align-items: center;">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div
                         class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
-                        <div class="img-box">
-                            <a href="blog-details-white.html">
-                                <img class="w-100" src="static/blog-img-1.jpg" alt="Blog Thumbnail" />
-                            </a>
-                        </div>
                         <div class="blog-content-wrap">
-                            <h3 class="blog-title">
-                                <a class="link" href="blog-details-white.html">Dr. M. Renuga</a>
+                            <!-- <div class="speaker-image">
+                                <img src="static_2/Unknown.jpeg" alt="Speaker 1" class="img-fluid" />
+                            </div> -->
+                            <h3 class="blog-title mt--10">
+                                <a class="link" href="#####">Prof. Christian M.I.M. Matthiessen</a>
                             </h3>
                             <div class="more-btn tmp-link-animation">
                                 <p class="portfoli-card-para">
-                                    Professor / HOD, Department of Humanities & Languages, Sona College Of Technology, Salem.<br><br>
-                                    Contact No. +91 98436-82314<br>
-                                    Mail ID: renugam@sonatech.ac.in
+                                    FUNCAP Research, Dept. of English Studies, Philology College, Universidad
+                                    Complutense de Madrid, Spain.
                                 </p>
-                                <a href="blog-details-white.html" class="read-more-btn">Read More
-                                    <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -1173,47 +1347,14 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div
                         class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
-                        <div class="img-box">
-                            <a href="blog-details-white.html">
-                                <img class="w-100" src="static/blog-img-2.jpg" alt="Blog Thumbnail" />
-                            </a>
-                        </div>
                         <div class="blog-content-wrap">
                             <h3 class="blog-title">
-                                <a class="link" href="blog-details-white.html">Dr. Shahin Banu</a>
+                                <a class="link" href="#####">Jorge Arus Hita</a>
                             </h3>
                             <div class="more-btn tmp-link-animation">
                                 <p class="portfoli-card-para">
-                                    Professor, Department of Humanities & Languages, Sona College Of Technology, Salem.<br><br>
-                                    Contact No. +91 98436-82314<br>
-                                    Mail ID: shahinbanu@sonatech.ac.in
-                                </p>
-                                <a href="blog-details-white.html" class="read-more-btn">Read More
-                                    <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div
-                        class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
-                        <div class="img-box">
-                            <a href="blog-details-white.html">
-                                <img class="w-100" src="static/blog-img-3.jpg" alt="Blog Thumbnail" />
-                            </a>
-                        </div>
-                        <div class="blog-content-wrap">
-                            <h3 class="blog-title">
-                                <a class="link" href="blog-details-white.html">Dr. M Kanachana</a>
-                            </h3>
-                            <div class="more-btn tmp-link-animation">
-                                <p class="portfoli-card-para">
-                                    Professor / HOD, Department of Humanities & Languages, Sona College Of Technology, Salem.<br><br>
-                                    Contact No. +91 98436-82314<br>
-                                    Mail ID: kanachana@sonatech.ac.in
-                                </p>
-                                <a href="blog-details-white.html" class="read-more-btn">Read More
-                                    <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                                    Dept. of English : Linguistics & Literature Faculty of Philology, Universidad
+                                    Complutense de Madrid, Spain.
                             </div>
                         </div>
                     </div>
@@ -1231,23 +1372,14 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div
                         class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
-                        <div class="img-box">
-                            <a href="blog-details-white.html">
-                                <img class="w-100" src="static/blog-img-1.jpg" alt="Blog Thumbnail" />
-                            </a>
-                        </div>
                         <div class="blog-content-wrap">
                             <h3 class="blog-title">
-                                <a class="link" href="blog-details-white.html">Dr. M. Renuga</a>
+                                <a class="link" href="#####">Dr.S.P. Dhanavel, Professor</a>
                             </h3>
                             <div class="more-btn tmp-link-animation">
                                 <p class="portfoli-card-para">
-                                    Professor / HOD, Department of Humanities & Languages, Sona College Of Technology, Salem.<br><br>
-                                    Contact No. +91 98436-82314<br>
-                                    Mail ID: renugam@sonatech.ac.in
+                                    Dept. of Humanities & Social Sciences, IIT, Madras
                                 </p>
-                                <a href="blog-details-white.html" class="read-more-btn">Read More
-                                    <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -1255,23 +1387,14 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div
                         class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
-                        <div class="img-box">
-                            <a href="blog-details-white.html">
-                                <img class="w-100" src="static/blog-img-2.jpg" alt="Blog Thumbnail" />
-                            </a>
-                        </div>
                         <div class="blog-content-wrap">
                             <h3 class="blog-title">
-                                <a class="link" href="blog-details-white.html">Dr. Shahin Banu</a>
+                                <a class="link" href="#####">Dr. Merin Simi Raj</a>
                             </h3>
                             <div class="more-btn tmp-link-animation">
                                 <p class="portfoli-card-para">
-                                    Professor, Department of Humanities & Languages, Sona College Of Technology, Salem.<br><br>
-                                    Contact No. +91 98436-82314<br>
-                                    Mail ID: shahinbanu@sonatech.ac.in
+                                    Associate Professor, Dept. of Humanities & Social Sciences, IIT, Madras
                                 </p>
-                                <a href="blog-details-white.html" class="read-more-btn">Read More
-                                    <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -1279,23 +1402,45 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div
                         class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
-                        <div class="img-box">
-                            <a href="blog-details-white.html">
-                                <img class="w-100" src="static/blog-img-3.jpg" alt="Blog Thumbnail" />
-                            </a>
-                        </div>
                         <div class="blog-content-wrap">
                             <h3 class="blog-title">
-                                <a class="link" href="blog-details-white.html">Dr. M Kanachana</a>
+                                <a class="link" href="#####">Dr. Selvin Vedamanickam</a>
                             </h3>
                             <div class="more-btn tmp-link-animation">
                                 <p class="portfoli-card-para">
-                                    Professor / HOD, Department of Humanities & Languages, Sona College Of Technology, Salem.<br><br>
-                                    Contact No. +91 98436-82314<br>
-                                    Mail ID: kanachana@sonatech.ac.in
+                                    Professor of English, St.Joseph University, Tindivenam
                                 </p>
-                                <a href="blog-details-white.html" class="read-more-btn">Read More
-                                    <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div
+                        class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
+                        <div class="blog-content-wrap">
+                            <h3 class="blog-title">
+                                <a class="link" href="#####">Dr. S. P. Suresh Kumar</a>
+                            </h3>
+                            <div class="more-btn tmp-link-animation">
+                                <p class="portfoli-card-para">
+                                    Associate Professor, Department of English, PSG College of Technology, Coimbatore.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div
+                        class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
+                        <div class="blog-content-wrap">
+                            <h3 class="blog-title">
+                                <a class="link" href="#####">Dr. S. Kumaran</a>
+                            </h3>
+                            <div class="more-btn tmp-link-animation">
+                                <p class="portfoli-card-para">
+                                    Assistant Professor, Department of English, Thiruvalluvar Govt.Arts College,
+                                    Rasipuram.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1313,23 +1458,35 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div
                         class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
-                        <div class="img-box">
-                            <a href="blog-details-white.html">
-                                <img class="w-100" src="static/blog-img-1.jpg" alt="Blog Thumbnail" />
-                            </a>
-                        </div>
                         <div class="blog-content-wrap">
                             <h3 class="blog-title">
-                                <a class="link" href="blog-details-white.html">Dr. M. Renuga</a>
+                                <a class="link" href="#####">Dr. N. Vadivu</a>
                             </h3>
                             <div class="more-btn tmp-link-animation">
                                 <p class="portfoli-card-para">
-                                    Professor / HOD, Department of Humanities & Languages, Sona College Of Technology, Salem.<br><br>
-                                    Contact No. +91 98436-82314<br>
-                                    Mail ID: renugam@sonatech.ac.in
+                                    Assistant Professor (S.G), Department of English, Sona College of Technology,
+                                    Salem.<br><br>
+                                    Contact No: +91 9600034717<br>
+                                    Mail ID: vadivun@sonatech.ac.in
                                 </p>
-                                <a href="blog-details-white.html" class="read-more-btn">Read More
-                                    <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div
+                        class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
+                        <div class="blog-content-wrap">
+                            <h3 class="blog-title">
+                                <a class="link" href="#####">Dr. G. Sarathalakshmi</a>
+                            </h3>
+                            <div class="more-btn tmp-link-animation">
+                                <p class="portfoli-card-para">
+                                    Assistant Professor (S.G), Department of English, Sona College of Technology,
+                                    Salem.<br><br>
+                                    Contact No: +91 9362810633<br>
+                                    Mail ID: saratha@sonatech.ac.in
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1337,23 +1494,17 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div
                         class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
-                        <div class="img-box">
-                            <a href="blog-details-white.html">
-                                <img class="w-100" src="static/blog-img-2.jpg" alt="Blog Thumbnail" />
-                            </a>
-                        </div>
                         <div class="blog-content-wrap">
                             <h3 class="blog-title">
-                                <a class="link" href="blog-details-white.html">Dr. Shahin Banu</a>
+                                <a class="link" href="#####">Dr. M. Vinoth</a>
                             </h3>
                             <div class="more-btn tmp-link-animation">
                                 <p class="portfoli-card-para">
-                                    Professor, Department of Humanities & Languages, Sona College Of Technology, Salem.<br><br>
-                                    Contact No. +91 98436-82314<br>
-                                    Mail ID: shahinbanu@sonatech.ac.in
+                                    Assistant Professor, Department of English, Sona College of Technology,
+                                    Salem.<br><br>
+                                    Contact No: +91 9994213907<br>
+                                    Mail ID: vinoth.m@sonatech.ac.in
                                 </p>
-                                <a href="blog-details-white.html" class="read-more-btn">Read More
-                                    <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -1361,23 +1512,17 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div
                         class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
-                        <div class="img-box">
-                            <a href="blog-details-white.html">
-                                <img class="w-100" src="static/blog-img-3.jpg" alt="Blog Thumbnail" />
-                            </a>
-                        </div>
                         <div class="blog-content-wrap">
                             <h3 class="blog-title">
-                                <a class="link" href="blog-details-white.html">Dr. M Kanachana</a>
+                                <a class="link" href="#####">Dr. J. Beaulah Joseline</a>
                             </h3>
                             <div class="more-btn tmp-link-animation">
                                 <p class="portfoli-card-para">
-                                    Professor / HOD, Department of Humanities & Languages, Sona College Of Technology, Salem.<br><br>
-                                    Contact No. +91 98436-82314<br>
-                                    Mail ID: kanachana@sonatech.ac.in
+                                    Assistant Professor, Department of English, Sona College of Technology,
+                                    Salem.<br><br>
+                                    Contact No: +91 9486789758<br>
+                                    Mail ID: Beaulah.eng@sonatech.ac.in
                                 </p>
-                                <a href="blog-details-white.html" class="read-more-btn">Read More
-                                    <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -1413,7 +1558,10 @@
                             <p class="sub-title">INR/USD Accepted</p>
                         </div>
                         <p class="card-para">
-Register now for the conference! We accept both INR and USD payments through our secure payment gateway. Early bird registration offers special discounted rates. Don't miss this opportunity to be part of this enriching academic experience. Click below to complete your registration and secure your spot.
+                            Register now for the conference! We accept both INR and USD payments through our secure
+                            payment gateway. Early bird registration offers special discounted rates. Don't miss this
+                            opportunity to be part of this enriching academic experience. Click below to complete your
+                            registration and secure your spot.
                         </p>
                         <a href="#" class="read-more-btn">Apply Now
                             <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
@@ -1428,10 +1576,12 @@ Register now for the conference! We accept both INR and USD payments through our
                         </div>
                         <div class="card-title">
                             <h3 class="main-title">Submission</h3>
-                            <p class="sub-title">Last Date Until 02/05/2025</p>
+                            <p class="sub-title">Last Date Until 02/03/2025</p>
                         </div>
                         <p class="card-para">
-                            Submit your research papers through our easy online submission system. All submissions undergo a rigorous double-blind peer review process. Please follow our submission guidelines carefully. Authors will receive timely feedback from our expert reviewers.
+                            Submit your research papers through our easy online submission system. All submissions
+                            undergo a rigorous double-blind peer review process. Please follow our submission guidelines
+                            carefully. Authors will receive timely feedback from our expert reviewers.
                         </p>
                         <a href="#" class="read-more-btn">Submit Now
                             <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
@@ -1449,7 +1599,10 @@ Register now for the conference! We accept both INR and USD payments through our
                             <p class="sub-title">Learn More</p>
                         </div>
                         <p class="card-para">
-                            Get detailed guidelines for paper submission, formatting requirements, and presentation instructions. Authors should follow IEEE format for papers. Check our comprehensive author guidelines covering paper length, citation style, and submission process. Download templates and example papers from our resources section.
+                            Get detailed guidelines for paper submission, formatting requirements, and presentation
+                            instructions. Authors should follow IEEE format for papers. Check our comprehensive author
+                            guidelines covering paper length, citation style, and submission process. Download templates
+                            and example papers from our resources section.
                         </p>
                         <a href="#" class="read-more-btn">Read More
                             <span class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
@@ -1465,8 +1618,8 @@ Register now for the conference! We accept both INR and USD payments through our
             </div>
         </div>
     </section>
-  
-    <section class="get-in-touch-area">
+
+    <section class="get-in-touch-area mb--60" id="contact">
         <div class="container">
             <div class="contact-get-in-touch-wrap">
                 <div class="get-in-touch-wrapper tmponhover">
@@ -1475,22 +1628,30 @@ Register now for the conference! We accept both INR and USD payments through our
                             <div class="section-head text-align-left">
                                 <div
                                     class="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-scroll-trigger--offscreen">
-                                    <span class="subtitle">GET IN TOUCH</span>
+                                    <span class="subtitle">Payment Details</span>
                                 </div>
                                 <h2
                                     class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2 tmp-scroll-trigger--offscreen">
-                                    Education Redefined
+                                    Payment for Conference
                                 </h2>
                                 <p
                                     class="description tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-scroll-trigger--offscreen">
-                                    Sona College Of Technology, located in the heart of Salem, Tamil Nadu, is a home for 10,000+ students pursuing their dreams of engineering. Established in 1997, the college has grown to become one of the premier engineering institutions in the region, offering world-class education and state-of-the-art facilities. Our commitment to academic excellence, research, and innovation has helped shape countless successful careers in engineering and technology.
+                                    Name: Principal, SCT<br>Bank Name: Central Bank of India Bank Branch, Five Roads,
+                                    Salem<br>Account Number: 3899478969<br>IFSC Code: CBIN0283306 (used for and NEFT
+                                    transactions)<br>SWIFT Code: CBININBBSAL<br>MICR Code: 636016004<br>Type of Account:
+                                    Saving Account<br>Branch Code: 3306
+                                    <br><br>
+                                    Bank Account Holder Name and Address : <br>SONA COLLEGE OF TECHNOLOGY General Engg
+                                    Junction Main Road, Suramangalam (PO) Salem – 636 005
+
                                 </p>
                             </div>
                         </div>
                         <div class="col-lg-7">
                             <div class="contact-inner">
                                 <div class="contact-image">
-                                    <img src="static/portfoli-img-1.jpg" alt="Contact Us" class="img-fluid rounded tmp-scroll-trigger tmp-zoom-in animation-order-1 tmp-scroll-trigger--offscreen"/>
+                                    <img src="static_2/QRCode.png" alt="Contact Us" style="width: 500px;height: 550px;"
+                                        class="img-fluid rounded tmp-scroll-trigger tmp-zoom-in animation-order-1 tmp-scroll-trigger--offscreen" />
                                 </div>
                             </div>
                         </div>
@@ -1506,17 +1667,13 @@ Register now for the conference! We accept both INR and USD payments through our
                     <div class="col-lg-5 col-md-6">
                         <div class="single-footer-wrapper border-right mr--20">
                             <div class="logo">
-                                <a href="index.html">
-                                    <img src="static/Logo-Better.png" alt="Sona College Of Tech" style="width: 290px; height: 90px;"/>
-                                </a>
+                                <!-- <a href="index.html">
+                                    <img src="static_2/Logo-76h.png" alt="Sona College Of Tech" width="1920"/>
+                                </a> -->
                             </div>
                             <p class="description">
-                                <span>Get Ready</span> To Create Great
+                                <span style="color: var(--color-primary);"><span style="color: #007bff;">@ Sona</span> ' Learning is a Celebration! '</span>
                             </p>
-                            <form action="#" class="newsletter-form-1 mt--40">
-                                <input type="email" placeholder="Email Adress" />
-                                <span class="form-icon"><i class="fa-regular fa-envelope"></i></span>
-                            </form>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
@@ -1524,19 +1681,19 @@ Register now for the conference! We accept both INR and USD payments through our
                             <h5 class="ft-title">Quick Link</h5>
                             <ul class="ft-link tmp-link-animation">
                                 <li>
-                                    <a href="about.html">Instructions</a>
+                                    <a href="#schedule">Instructions</a>
                                 </li>
                                 <li>
-                                    <a href="service.html">Register Now</a>
+                                    <a href="#registration">Register Now</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact Us</a>
+                                    <a href="#contact">Contact Us</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Thrust Areas</a>
+                                    <a href="#about">Thrust Areas</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Home Page</a>
+                                    <a href="#home">Home Page</a>
                                 </li>
                             </ul>
                         </div>
@@ -1546,16 +1703,19 @@ Register now for the conference! We accept both INR and USD payments through our
                             <h5 class="ft-title">Contact</h5>
                             <ul class="ft-link tmp-link-animation">
                                 <li>
-                                    <span class="ft-icon"><i class="fa-solid fa-envelope"></i></span><a
-                                        href="#">Sona College of Technology</a>
+                                    <span class="ft-icon"><i class="fa-solid fa-envelope"></i></span><a href="#">Sona
+                                        College of Technology</a>
                                 </li>
                                 <li>
-                                    <span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>3891 Ranchview
-                                    Dr. Richardson
+                                    <span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>Sona College of
+                                    Technology,
+                                    Junction Main Road,
+                                    Salem - 636 005,
+                                    Tamilnadu, India.
                                 </li>
                                 <li>
                                     <span class="ft-icon"><i class="fa-solid fa-phone"></i></span><a
-                                        href="#">01245789321</a>
+                                        href="tel:+919843682314">+91 98436-82314</a>
                                 </li>
                             </ul>
                             <div class="social-link footer">
@@ -1576,12 +1736,15 @@ Register now for the conference! We accept both INR and USD payments through our
                 <div class="col-lg-12">
                     <div class="main-wrapper">
                         <p class="copy-right-para tmp-link-animation">
-                            © <a href="#">Sona College Of Technology </a> - <script>document.write(new Date().getFullYear());</script> | All Rights Reserved | <a href="https://www.linkedin.com/in/rohith-s-v-049ba3254/" target="_blank">Designed & Developed by Department Of IT - Rohith SV</a>
+                            © <a href="#">Sona College Of Technology </a> -
+                            <script>document.write(new Date().getFullYear());</script> | All Rights Reserved | <a
+                                href="https://www.linkedin.com/in/rohith-s-v-049ba3254/" target="_blank">Designed &
+                                Developed by Department Of IT - Rohith SV</a>
                         </p>
                         <ul class="tmp-link-animation">
-                            <li><a href="#">Trams &amp; Condition</a></li>
+                            <li><a href="#">Terms &amp; Condition</a></li>
                             <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1651,50 +1814,86 @@ Register now for the conference! We accept both INR and USD payments through our
                     <div>Powered By Sona College Of Technology</div>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
-    <div class="demo-modal-area" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: none; justify-content: center; align-items: center; z-index: 9999;">
-        <div class="wrapper" style="position: relative; background: white; padding: 20px; border-radius: 8px; width: 95%; max-width: 1200px; height: 95vh; max-height: 900px; margin: auto; overflow: auto;">
-            <button onclick="this.closest('.demo-modal-area').style.display='none'" style="position: absolute; right: 15px; top: 15px; background: none; border: none; font-size: 28px; cursor: pointer; z-index: 1; color: #333; transition: color 0.3s; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: #f5f5f5; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">&times;</button>
+    <div class="demo-modal-area"
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: none; justify-content: center; align-items: center; z-index: 9999;">
+        <div class="wrapper"
+            style="position: relative; background: white; padding: 20px; border-radius: 8px; width: 95%; max-width: 1200px; height: 95vh; max-height: 900px; margin: auto; overflow: auto;">
+            <button onclick="this.closest('.demo-modal-area').style.display='none'"
+                style="position: absolute; right: 15px; top: 15px; background: none; border: none; font-size: 28px; cursor: pointer; z-index: 1; color: #333; transition: color 0.3s; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: #f5f5f5; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">&times;</button>
             <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
-                <iframe src="https://www.sonatech.ac.in" style="width: 100%; height: 100%; border: none; border-radius: 4px;" allow="fullscreen"></iframe>
+                <iframe src="https://www.sonatech.ac.in"
+                    style="width: 100%; height: 100%; border: none; border-radius: 4px;" allow="fullscreen"></iframe>
             </div>
         </div>
     </div>
 
     <script>
-        document.querySelector('.buy-theme a').addEventListener('click', function(e) {
+        document.querySelector('.buy-theme a').addEventListener('click', function (e) {
             e.preventDefault();
             document.querySelector('.demo-modal-area').style.display = 'flex';
         });
     </script>
-    
 
-    <script src="static/jquery.js"></script>
-    <script src="static/jquery-ui.min.js"></script>
-    <script src="static/waypoints.min.js"></script>
 
-    <script src="static/odometer.js"></script>
-    <script src="static/appear.js"></script>
+    <script src="static_2/jquery.js"></script>
+    <script src="static_2/jquery-ui.min.js"></script>
+    <script src="static_2/waypoints.min.js"></script>
 
-    <script src="static/jquery-one-page-nav.js"></script>
-    <script src="static/swiper.js"></script>
+    <script src="static_2/odometer.js"></script>
+    <script src="static_2/appear.js"></script>
 
-    <script src="static/gsap.js"></script>
-    <script src="static/splittext.js"></script>
-    <script src="static/scrolltigger.js"></script>
-    <script src="static/scrolltoplugins.js"></script>
-    <script src="static/smoothscroll.js"></script>
+    <script src="static_2/jquery-one-page-nav.js"></script>
+    <script src="static_2/swiper.js"></script>
+
+    <script src="static_2/gsap.js"></script>
+    <script src="static_2/splittext.js"></script>
+    <script src="static_2/scrolltigger.js"></script>
+    <script src="static_2/scrolltoplugins.js"></script>
+    <script src="static_2/smoothscroll.js"></script>
     <!-- bootstrap Js-->
-    <script src="static/bootstrap.min.js"></script>
-    <script src="static/waw.js"></script>
-    <script src="static/isotop.js"></script>
-    <script src="static/animation.js"></script>
-    <script src="static/contact.form.js"></script>
-    <script src="static/backtop.js"></script>
-    <script src="static/text-type.js"></script>
+    <script src="static_2/bootstrap.min.js"></script>
+    <script src="static_2/waw.js"></script>
+    <script src="static_2/isotop.js"></script>
+    <script src="static_2/animation.js"></script>
+    <script src="static_2/contact.form.js"></script>
+    <script src="static_2/backtop.js"></script>
+    <script src="static_2/text-type.js"></script>
     <!-- custom Js -->
-    <script src="static/main.js"></script>
+    <script src="static_2/main.js"></script>
+    <script>
+        // Set the date we're counting down to
+        const countDownDate = new Date("May 7, 2025 00:00:00").getTime();
+
+        // Update the countdown every 1 second
+        const x = setInterval(function () {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            // Calculate days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the results
+            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+
+            // If the countdown is finished, display expired
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days").innerHTML = "00";
+                document.getElementById("hours").innerHTML = "00";
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";
+            }
+        }, 1000);
+    </script>
+
 </body>
 
 </html>
