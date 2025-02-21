@@ -600,7 +600,7 @@ audio:not([controls]) {
 }
 
 .registration-notes li {
-  font-size: 25px;
+  font-size: 20px;
   color: #666;
 }
 
