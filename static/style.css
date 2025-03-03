@@ -59,10 +59,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
-  --color-primary: #FF014F;
+  /* --color-primary: #FF014F; */
   /* --color-primary: #86a39f; */
   /* --color-primary: #4d3e62; */
-  --color-primary-alt: #ff014dd9;
+  --color-primary: #3C1642;
+  --color-primary-alt: #3C1642;
   --color-primary-2nd: #FF494A;
   --color-primary-3rd: #FDC448;
   --color-primary-4th: #0071ff;
@@ -70,7 +71,7 @@
   --color-white:#ffffff;
   --color-gray: #9F9F9F;
   --color-gray-2: #141414;
-  --color-subtitle: #f9004d;
+  --color-subtitle: #3C1642;
   --background-color-1: #24243557;
   --background-color-2: #13131d;
   --background-color-3: #151521;
